@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls-Royce: A Legacy in Motion | Interactive Automotive Experience</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore an independent interactive Rolls-Royce concept featuring scroll-controlled design, craftsmanship and engineering sequences.">
+    <meta name="keywords" content="Rolls-Royce, Interactive Experience, Automotive Design, Craftsmanship, Engineering, Scroll Animation">
+    <meta name="author" content="Independent Portfolio Concept">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Rolls-Royce: A Legacy in Motion | Interactive Automotive Experience">
+    <meta property="og:description" content="Explore an independent interactive Rolls-Royce concept featuring scroll-controlled design, craftsmanship and engineering sequences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://independent-rolls-royce-concept.com/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Premium Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-live="polite">
+        <div class="loader-content">
+            <h1 class="loader-wordmark">ROLLS-ROYCE</h1>
+            <p class="loader-status">Preparing your experience</p>
+            <div class="loader-track">
+                <div id="loader-bar" class="loader-bar"></div>
+            </div>
+            <p id="loader-percentage" class="loader-percentage">0%</p>
+        </div>
+    </div>
+
+    <!-- Glassmorphic Header / Navigation -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#experience" class="wordmark-link">
+                <span class="wordmark">ROLLS-ROYCE</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            
+            <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#heritage" class="nav-link">Heritage</a></li>
+                    <li><a href="#craftsmanship" class="nav-link">Craftsmanship</a></li>
+                    <li><a href="#engineering" class="nav-link">Engineering</a></li>
+                    <li><a href="#collection" class="nav-link">Collection</a></li>
+                    <li><a href="https://www.rolls-roycemotorcars.com/" target="_blank" rel="noopener noreferrer" class="nav-link external-btn">Official Website</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Hero Welcome Section (Before scrolling animation begins) -->
+        <section class="hero-welcome">
+            <div class="hero-content">
+                <span class="sub-label">ROLLS-ROYCE</span>
+                <h1 class="hero-title">A LEGACY IN MOTION</h1>
+                <p class="hero-desc">An interactive exploration of craftsmanship, engineering and commanding automotive presence.</p>
+                <div class="scroll-prompt">
+                    <span class="scroll-arrow"></span>
+                    <span class="scroll-text">Scroll to Begin</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Scroll Interactive Animation Area -->
+        <div class="scroll-container" id="experience">
+            
+            <!-- Sticky Canvas Viewport -->
+            <div class="canvas-wrapper">
+                <canvas id="animation-canvas"></canvas>
+                
+                <!-- Dynamic Floating Coordinate Hotspots -->
+                <div class="hotspots-overlay" id="hotspots-overlay" aria-live="polite"></div>
+                
+                <!-- Active Sequence Progress HUD -->
+                <div class="sequence-indicator" aria-label="Experience Progress">
+                    <div class="indicator-step active" data-seq="1">
+                        <span class="step-num">01</span>
+                        <span class="step-name">Exterior</span>
+                    </div>
+                    <div class="indicator-step" data-seq="2">
+                        <span class="step-num">02</span>
+                        <span class="step-name">Rear Parts</span>
+                    </div>
+                    <div class="indicator-step" data-seq="3">
+                        <span class="step-num">03</span>
+                        <span class="step-name">Rotation</span>
+                    </div>
+                    <div class="indicator-step" data-seq="4">
+                        <span class="step-num">04</span>
+                        <span class="step-name">Engine</span>
+                    </div>
+                    <div class="indicator-step" data-seq="5">
+                        <span class="step-num">05</span>
+                        <span class="step-name">Arrival</span>
+                    </div>
+                    <div class="indicator-progress-bar">
+                        <div id="indicator-progress-fill" class="indicator-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scrollable content sections to track progress & show labels -->
+            <section class="scroll-section" id="seq-1" data-sequence="1" aria-label="Exterior Rotation Sequence">
+                <div class="section-content left-align">
+                    <span class="section-badge">01 — A LEGACY IN MOTION</span>
+                    <h2 class="section-title">Commanding from every angle</h2>
+                    <p class="section-desc">Distinctive proportions, an upright presence and carefully balanced surfaces create an unmistakable automotive silhouette.</p>
+                </div>
+            </section>
+            
+            <section class="scroll-section" id="seq-2" data-sequence="2" aria-label="Rear Components Sequence">
+                <div class="section-content right-align">
+                    <span class="section-badge">02 — CRAFTSMANSHIP</span>
+                    <h2 class="section-title">Every component has a purpose</h2>
+                    <p class="section-desc">Explore the structure beneath the surface as the rear design separates into its individual components and returns with mechanical precision.</p>
+                </div>
+            </section>
+            
+            <section class="scroll-section" id="seq-3" data-sequence="3" aria-label="Return to Front Sequence">
+                <div class="section-content left-align">
+                    <span class="section-badge">03 — PRESENCE</span>
+                    <h2 class="section-title">Designed to be remembered</h2>
+                    <p class="section-desc">From every perspective, the motor car maintains a sense of balance, authority and effortless elegance.</p>
+                </div>
+            </section>
+            
+            <section class="scroll-section" id="seq-4" data-sequence="4" aria-label="Engine and Front Components Sequence">
+                <div class="section-content right-align">
+                    <span class="section-badge">04 — ENGINEERING</span>
+                    <h2 class="section-title">Power beneath the surface</h2>
+                    <p class="section-desc">Discover the engine, cooling system, structural components and detailed engineering concealed beneath the exterior.</p>
+                </div>
+            </section>
+            
+            <section class="scroll-section" id="seq-5" data-sequence="5" aria-label="Car Approaches Sequence">
+                <div class="section-content center-align">
+                    <span class="section-badge">05 — THE EXPERIENCE</span>
+                    <h2 class="section-title">Effortless presence in motion</h2>
+                    <p class="section-desc">An experience defined by composure, confidence and a sense of arrival.</p>
+                </div>
+            </section>
+
+            <!-- Final approach message -->
+            <section class="scroll-section final-message-section" data-sequence="5" aria-label="A Statement of Arrival">
+                <div class="section-content center-align final-message">
+                    <h2 class="cinematic-heading">More than movement.<br>A statement of arrival.</h2>
+                </div>
+            </section>
+        </div>
+
+        <!-- Additional Editorial Sections (Scroll under canvas) -->
+        
+        <!-- Heritage Section -->
+        <section class="editorial-section" id="heritage">
+            <div class="container">
+                <span class="section-badge gold">HERITAGE</span>
+                <h2 class="editorial-title">A meeting that shaped motoring</h2>
+                <p class="editorial-lead">Charles Rolls and Henry Royce met in Manchester on 4 May 1904. Their shared ambition brought engineering precision and entrepreneurial vision together under the Rolls-Royce name.</p>
+                
+                <!-- Heritage Timeline -->
+                <div class="heritage-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">1904</div>
+                        <div class="timeline-content">
+                            <p>Charles Rolls and Henry Royce meet in Manchester, forging an alliance built on uncompromising standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2003</div>
+                        <div class="timeline-content">
+                            <p>The modern Home of Rolls-Royce begins operations at Goodwood, West Sussex, uniting design and hand craftsmanship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">PRESENT</div>
+                        <div class="timeline-content">
+                            <p>Craftsmanship, personalization and advanced engineering continue to shape every bespoke commission worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Craftsmanship / Goodwood Section -->
+        <section class="editorial-section bg-secondary" id="craftsmanship">
+            <div class="container grid-2">
+                <div class="editorial-card text-left">
+                    <span class="section-badge gold">GOODWOOD</span>
+                    <h2 class="editorial-title">The home of Rolls-Royce</h2>
+                    <p class="editorial-text">The modern Home of Rolls-Royce opened in Goodwood, West Sussex, on 1 January 2003. The facility brings design, engineering and hand craftsmanship together in one carefully considered environment.</p>
+                </div>
+                <div class="editorial-card text-left border-left">
+                    <span class="section-badge gold">CRAFTSMANSHIP</span>
+                    <h2 class="editorial-title">Crafted with purpose</h2>
+                    <p class="editorial-text">Each motor car is shaped through a combination of advanced engineering and detailed craftsmanship. Materials, finishes and individual details are considered as part of one complete experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bespoke Section -->
+        <section class="editorial-section text-center" id="bespoke">
+            <div class="container max-w-medium">
+                <span class="section-badge gold">BESPOKE</span>
+                <h2 class="editorial-title">No two visions are the same</h2>
+                <p class="editorial-lead">Rolls-Royce Bespoke allows clients to personalise colours, materials, embroidery, veneers and carefully selected details. The result is a motor car shaped around an individual vision.</p>
+                <div class="divider-gold"></div>
+                <span class="section-badge gold font-small">SPIRIT OF ECSTASY</span>
+                <h3 class="editorial-subtitle">An enduring symbol</h3>
+                <p class="editorial-desc-small">The Spirit of Ecstasy has become one of the most recognisable symbols in motoring, representing movement, grace and the heritage of Rolls-Royce.</p>
+            </div>
+        </section>
+
+        <!-- Discover the Collection Section -->
+        <section class="editorial-section bg-secondary" id="collection">
+            <div class="container">
+                <span class="section-badge gold text-center block">SHOWCASE</span>
+                <h2 class="editorial-title text-center">Discover the Collection</h2>
+                
+                <div class="collection-grid">
+                    <!-- PHANTOM -->
+                    <div class="collection-card">
+                        <div class="card-border-top"></div>
+                        <h3 class="card-title">PHANTOM</h3>
+                        <p class="card-desc">The flagship expression of Rolls-Royce, recognised for its commanding presence, refined cabin and extensive Bespoke possibilities.</p>
+                        <span class="card-link">Explore Bespoke Expression</span>
+                    </div>
+                    
+                    <!-- GHOST -->
+                    <div class="collection-card">
+                        <div class="card-border-top"></div>
+                        <h3 class="card-title">GHOST</h3>
+                        <p class="card-desc">A contemporary expression of Rolls-Royce luxury that combines refined craftsmanship with a more driver-focused character.</p>
+                        <span class="card-link">Explore Contemporary Craft</span>
+                    </div>
+                    
+                    <!-- CULLINAN -->
+                    <div class="collection-card">
+                        <div class="card-border-top"></div>
+                        <h3 class="card-title">CULLINAN</h3>
+                        <p class="card-desc">A commanding luxury SUV created to combine Rolls-Royce refinement with the freedom to travel beyond familiar surroundings.</p>
+                        <span class="card-link">Explore Infinite Journeys</span>
+                    </div>
+                    
+                    <!-- SPECTRE -->
+                    <div class="collection-card">
+                        <div class="card-border-top"></div>
+                        <h3 class="card-title">SPECTRE SERIES II</h3>
+                        <p class="card-desc">An ultra-luxury electric super coupé that brings silent electric propulsion together with Rolls-Royce design and craftsmanship.</p>
+                        <span class="card-link">Explore Silent Motion</span>
+                    </div>
+                    
+                    <!-- BLACK BADGE -->
+                    <div class="collection-card">
+                        <div class="card-border-top"></div>
+                        <h3 class="card-title">BLACK BADGE</h3>
+                        <p class="card-desc">A more assertive interpretation of Rolls-Royce, created with darker visual details and a stronger focus on performance, control and individual expression.</p>
+                        <span class="card-link">Explore Assertive Design</span>
+                    </div>
+                </div>
+                
+                <div class="center-btn-container">
+                    <a href="https://www.rolls-roycemotorcars.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        Visit the official Rolls-Royce website
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing / Call to Action Section -->
+        <section class="editorial-section closing-cta">
+            <div class="container text-center max-w-medium">
+                <h2 class="cinematic-heading-large">Inspiring greatness through motion</h2>
+                <p class="editorial-lead">Explore a legacy shaped by engineering, craftsmanship and individual expression.</p>
+                <div class="cta-buttons">
+                    <button id="btn-replay" class="btn-outline">Replay Experience</button>
+                    <a href="https://www.rolls-roycemotorcars.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        Visit Official Website
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with Concept Disclaimer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">
+                    This is an independent educational and portfolio concept. It is not affiliated with, endorsed by or sponsored by Rolls-Royce Motor Cars Limited. Rolls-Royce and its related trademarks belong to their respective owners.
+                </p>
+                <p class="footer-copyright">&copy; 2026 Independent Portfolio Concept. Created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
